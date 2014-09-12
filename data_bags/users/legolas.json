@@ -1,0 +1,9 @@
+{
+  "id" : "legolas", 
+  "uid" : 200,  
+  "gid" : 200, 
+  "shell" : "/bin/zsh", 
+  "comment" : "Keen eyed Legolas",
+  "groups" : [ "elves", "fellowship" ]
+}
+

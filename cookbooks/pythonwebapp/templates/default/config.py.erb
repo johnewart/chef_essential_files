@@ -1,0 +1,10 @@
+import web
+db_params = {
+  'dbn': 'postgres',
+  'db': '<%= @dbname %>',
+  'user': '<%= @dbuser %>',
+  'pw': '<%= @dbpass %>',
+  'host' : '<%= @dbhost %>'
+}
+DB = web.database(**db_params)
+cache = False

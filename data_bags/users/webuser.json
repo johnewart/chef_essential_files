@@ -1,0 +1,9 @@
+{
+  "id" : "webuser",
+  "uid" : "10000",
+  "gid" : 100,
+  "shell" : "/bin/bash",
+  "comment" : "Webapp deployment user",
+  "groups" : ["webapp"]
+}
+

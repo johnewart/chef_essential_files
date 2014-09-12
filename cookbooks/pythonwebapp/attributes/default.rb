@@ -1,0 +1,11 @@
+default[:webapp][:install_path] = '/opt/webapp'
+default[:webapp][:python] = '/usr/bin/python2'
+default[:webapp][:user] = "webuser"
+default[:webapp][:port] = "8080"
+default[:webapp][:group] = "users"
+default[:webapp][:dbname] = "webapp"
+default[:webapp][:dbuser] = "webuser"
+default[:webapp][:dbpass] = "secret"
+default[:webapp][:load_balancer] = 'webapp_elb'
+default[:webapp][:aws][:access_key] = 'access_key'
+default[:webapp][:aws][:secret_key] = 'secret_key'

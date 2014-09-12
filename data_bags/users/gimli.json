@@ -1,0 +1,9 @@
+{
+  "id" : "gimli", 
+  "uid" : 201,  
+  "gid" : 201, 
+  "shell" : "/bin/csh", 
+  "comment" : "Grumpy old dwarf",
+  "groups" : [ "dwarves", "fellowship" ]
+}
+

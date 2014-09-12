@@ -1,0 +1,13 @@
+{
+  "name": "db00",
+  "chef_environment": "_default",
+  "normal": {
+    "tags": [
+
+    ]
+  },
+  "run_list": [
+    "role[base_server]",
+    "role[postgresql_server]"
+  ]
+}

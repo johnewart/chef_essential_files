@@ -1,0 +1,8 @@
+{ 
+  "id" : "frodo", 
+  "uid" : 100,  
+  "gid" : 100, 
+  "shell" : "/bin/hobbitshell", 
+  "comment" : "Frodo of the nine fingers",
+  "groups" : ["hobbits", "fellowship"]
+}

@@ -1,0 +1,9 @@
+{
+  "id" : "samwise", 
+  "uid" : "101",  
+  "gid" : 101, 
+  "shell" : "/bin/gardenshell", 
+  "comment" : "Samwise the strong",
+  "groups" : ["hobbits", "fellowship"]
+}
+

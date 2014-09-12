@@ -1,0 +1,12 @@
+{ 
+  "id" : "frodo", 
+  "uid" : 100,  
+  "gid" : 100, 
+  "shell" : "/bin/hobbitshell", 
+  "comment" : "Frodo of the nine fingers",
+  "groups" : ["hobbits", "fellowship"],
+  "ssh_keys": [ 
+    "ssh-dss RG9uJ3Qgd29ycnksIFNhbS4gUm9zaWUga25vd3MgYW4gaWRpb3Qgd2hlbiBzaGUgc2VlcyBvbmUu frodo@shire", 
+    "ssh-dss TXkgbWFzdGVyLCBTYXVyb24gdGhlIEdyZWF0LCBiaWRzIHRoZWUgd2VsY29tZS4gSXMgdGhlcmUgYW55IGluIHRoaXMgcm91dCB3aXRoIGF1dGhvcml0eSB0byB0cmVhdCB3aXRoIG1lPyA= sauron@mordor"
+  ]
+}

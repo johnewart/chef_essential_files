@@ -1,0 +1,49 @@
+{
+  "name": "postgresql_server",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "postgresql": { 
+      "version": "9.3",
+      "config": {
+        "listen_addresses": "0.0.0.0",
+        "port": "5432"
+      },
+      "pg_hba": [
+        { 
+          "comment": "# WebUser",
+          "type": "host", 
+          "db": "webapp", 
+          "addr": "0.0.0.0 0.0.0.0",
+          "user": "webuser", 
+          "method": "md5"
+        },
+        {
+          "comment": "# Template",
+          "type": "host",
+          "db": "template1",
+          "addr": "127.0.0.1 255.255.255.255",
+          "user": "all",
+          "method": "trust"
+        },
+        {
+          "comment": "# PostgreSQL user", 
+          "type": "host",
+          "db": "webapp",
+          "addr": "127.0.0.1 255.255.255.255",
+          "user": "postgres", 
+          "method": "trust"
+        }
+      ]
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "postgresql::server",
+    "pythonwebapp::database"
+  ],
+  "env_run_lists": {
+  }
+}
